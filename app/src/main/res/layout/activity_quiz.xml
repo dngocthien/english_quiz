@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="12dp">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="Score: 0"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/iterator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/score"
+            android:freezesText="true"
+            android:text="Question: /"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/remainTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:freezesText="true"
+            android:text="00:00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36dp" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remainTime"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:freezesText="true"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/r_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:freezesText="true"
+                android:paddingVertical="10dp"
+                android:button="@null"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:freezesText="true"
+                android:paddingVertical="10dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:gravity="center"
+                android:button="@null"
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:freezesText="true"
+                android:paddingVertical="10dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:gravity="center"
+                android:button="@null"
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:freezesText="true"
+                android:paddingVertical="10dp"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r_group"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="24dp"
+            android:freezesText="true"
+            android:background="@color/colorAccent"
+            android:paddingRight="18dp"
+            android:text="Confirm"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+</ScrollView>

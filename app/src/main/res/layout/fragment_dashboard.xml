@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:id="@+id/fragment_dashboard_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="68dp"
+        android:layout_above="@id/bottom_navigation"/>
+
+    <Button
+        android:id="@+id/btn_dashboard_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/center"
+        android:background="@drawable/button_clicked_left_style"
+        android:text="Record"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <Button
+        android:id="@+id/btn_dashboard_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="24dp"
+        android:layout_toRightOf="@+id/center"
+        android:background="@drawable/button_right_style"
+        android:text="Ranking"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>
